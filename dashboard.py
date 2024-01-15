@@ -31,7 +31,6 @@ col1.markdown("""
               
     -----
               
-
     *Notes:*
     
     - *Useful explanation of Interest Rate Swaps: https://www.youtube.com/watch?v=PLjyj1FJqig*
@@ -40,8 +39,6 @@ col1.markdown("""
     GBP LIBOR 3-months benchmark, which has been phased out in real-world 
     finance. Please note that this is for demonstration purposes only.*
     """)
-
-
 
 # Read GBP LIBOR historical data
 df = pd.read_csv("LIBOR GBP.csv")
@@ -119,7 +116,7 @@ col2.plotly_chart(fig2, use_container_width = True)
 fixed_greater = df_cashflow_contract['net_cash_flow'].apply(lambda x: x if x > 0 else None)
 float_greater = df_cashflow_contract['net_cash_flow'].apply(lambda x: x if x < 0 else None)
 
-# Create the line plot
+# Create the line plot for cash flow
 fig3 = go.Figure()
 
 # Trace for when fixed greater than floating
