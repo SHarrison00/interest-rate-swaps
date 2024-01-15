@@ -28,7 +28,20 @@ col1.markdown("""
     linked to the **GBP LIBOR 3-months benchmark**. This application 
     demonstrates how this financial instrument operates, allowing you to 
     explore the mechanics of interest rate swaps.
+              
+    -----
+              
+
+    *Notes:*
+    
+    - *Useful explanation of Interest Rate Swaps: https://www.youtube.com/watch?v=PLjyj1FJqig*
+    
+    - *This demo showcases the mechanics of an interest rate swap using the 
+    GBP LIBOR 3-months benchmark, which has been phased out in real-world 
+    finance. Please note that this is for demonstration purposes only.*
     """)
+
+
 
 # Read GBP LIBOR historical data
 df = pd.read_csv("LIBOR GBP.csv")
