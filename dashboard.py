@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objs as go
 
-# Adjust layour
+# Adjust layout
 st.set_page_config(layout="wide")
 col1, col2 = st.columns(2)
 
